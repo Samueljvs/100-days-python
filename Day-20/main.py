@@ -33,5 +33,6 @@ while game_on:
         segments[seg_num].goto(new_x, new_y)
     segments[0].forward(20)
 
+ game_on = False
 
 screen.exitonclick()
