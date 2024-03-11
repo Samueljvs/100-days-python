@@ -1,0 +1,7 @@
+checked = []
+
+text = "✔"
+
+
+print(f"{text * 1}")
+
