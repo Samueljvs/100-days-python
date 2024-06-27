@@ -1,0 +1,5 @@
+amazon | sam.john.vs@gmail.com | password
+google | sam.john.vs@gmail.com | qwerty
+amazon | sam.john.vs@gmail.com | segst3sat3
+test | sam.john.vs@gmail.com | testetees
+test.com | sam.john.vs@gmail.com | hello
