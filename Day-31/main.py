@@ -13,6 +13,7 @@ try:
 except FileNotFoundError:
     org_data = pd.read_csv("Day-31/data/french_words.csv")
     to_learn = org_data.to_dict(orient="records")
+    
 else:
     to_learn = data.to_dict(orient="records")
 
