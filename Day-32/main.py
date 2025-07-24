@@ -1,62 +1,42 @@
-import smtplib
-import datetime as dt
+##################### Normal Starting Project ######################
+
 import pandas as pd
+import datetime  as dt
 import random as rnd
+import smtplib
 
-
-## Variables
-MONDAY = 2
 my_email = 'sammy.verevis@gmail.com'
 password = 'ivya lfit jrmw glii'
 
 
-## Load in data
-try:
-    data = pd.read_csv('Day-32/quotes_to_use.txt')
-except FileNotFoundError:
-    org_data = pd.read_csv('Day-32/quotes.txt')
-    quote_list = org_data.values.tolist()
-else:
-    quote_list = data.values.tolist()
+df = pd.read_csv("Day-32/birthdays.csv")
 
-if len(quote_list) == 0:
-    org_data = pd.read_csv('Day-32/quotes.txt')
-    quote_list = org_data.values.tolist()
+df.set_index(["month", "day"], inplace=True)
+bd_dict = {
+    index: row.to_dict() for (index, row) in df.iterrows()}
 
-print(len(quote_list))
+today = (dt.datetime.now().month, dt.datetime.now().day)
 
-# Get test varliable
-now = dt.datetime.now().weekday()
-today_quote = quote_list.pop(0)
-
-# Conditional test
-if MONDAY == now:
-    # get today's quote and then remove from list and save it as quotes_to_send
-    today_quote = quote_list.pop(0)
-    pd.DataFrame(quote_list).to_csv("Day-32/quotes_to_use.txt", index=False)
+if(today) in bd_dict:
+    name = bd_dict[today]['name'] # get name for letter
+    with open(f"Day-32/letter_templates/letter_{rnd.randrange(1,4)}.txt") as letter_file:
+        letter = letter_file.read()
+        letter = letter.replace("[NAME]", name)
 
     with smtplib.SMTP("smtp.gmail.com") as connection:
-        connection.starttls()
+        connection.starttls() 
         connection.login(user = my_email, password = password )
         connection.sendmail(
             from_addr = my_email, 
             to_addrs = 'sam.verevis@yahoo.com', 
-            msg = f"Subject:Quote of the Day\n\n{str(today_quote).strip('[]')}"
+            msg = f"Subject:Happy Birthday {name}!\n\n{letter}"
             )
 
-## better code below
+# 4. Send the letter generated in step 3 to that person's email address.
+# HINT 1: Gmail(smtp.gmail.com), Yahoo(smtp.mail.yahoo.com), Hotmail(smtp.live.com), Outlook(smtp-mail.outlook.com)
+# HINT 2: Remember to call .starttls()
+# HINT 3: Remember to login to your email service with email/password. Make sure your security setting is set to allow less secure apps.
+# HINT 4: The message should have the Subject: Happy Birthday then after \n\n The Message Body.
 
-if MONDAY == 1:
-    with open("quotes.txt") as quote_file:
-        all_quotes = quote_file.readlines()
-        quote = random.choice(all_quotes)
 
-    print(quote)
-    with smtplib.SMTP("smtp.gmail.com") as connection:
-        connection.starttls()
-        connection.login(my_email, password)
-        connection.sendmail(
-            from_addr=my_email,
-            to_addrs=my_email,
-            msg=f"Subject:Monday Motivation\n\n{quote}"
-        )
+
