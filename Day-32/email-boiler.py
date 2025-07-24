@@ -7,7 +7,7 @@ import random as rnd
 ## Variables
 MONDAY = 2
 my_email = 'sammy.verevis@gmail.com'
-password = 'ivya lfit jrmw glii'
+password = 'xxx'
 
 
 ## Load in data

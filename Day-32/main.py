@@ -6,7 +6,7 @@ import random as rnd
 import smtplib
 
 my_email = 'sammy.verevis@gmail.com'
-password = 'ivya lfit jrmw glii'
+password = 'xxx'
 
 
 df = pd.read_csv("Day-32/birthdays.csv")
