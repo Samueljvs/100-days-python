@@ -2,6 +2,9 @@ import requests
 import os
 from requests.auth import HTTPBasicAuth
 from datetime import datetime as dt
+from dotenv import load_dotenv
+
+load_dotenv(dotenv_path="Day-38/.env")  # Manually load .env
 
 
 APP_ID = os.getenv("NUTRIX_APP_ID")
