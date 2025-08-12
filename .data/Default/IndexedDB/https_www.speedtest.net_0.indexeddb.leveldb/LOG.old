@@ -1,0 +1,11 @@
+2025/08/12-11:21:12.714 632c Creating DB C:\Users\Samuel\Documents\Working-Folder\100-days-python\.data\Default\IndexedDB\https_www.speedtest.net_0.indexeddb.leveldb since it was missing.
+2025/08/12-11:21:12.721 632c Reusing MANIFEST C:\Users\Samuel\Documents\Working-Folder\100-days-python\.data\Default\IndexedDB\https_www.speedtest.net_0.indexeddb.leveldb/MANIFEST-000001
+2025/08/12-11:21:12.733 5f2c Level-0 table #5: started
+2025/08/12-11:21:12.735 5f2c Level-0 table #5: 1318 bytes OK
+2025/08/12-11:21:12.738 5f2c Delete type=0 #3
+2025/08/12-11:21:12.739 5f2c Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/08/12-11:21:12.747 5f2c Level-0 table #7: started
+2025/08/12-11:21:12.750 5f2c Level-0 table #7: 5194 bytes OK
+2025/08/12-11:21:12.752 5f2c Delete type=0 #4
+2025/08/12-11:21:12.752 632c Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/08/12-11:21:12.756 5f2c Manual compaction at level-0 from '\x00\x05\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x06\x00\x00\x00' @ 0 : 0; will stop at (end)

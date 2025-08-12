@@ -1,0 +1,15 @@
+2025/08/12-11:22:37.534 30f0 Reusing MANIFEST C:\Users\Samuel\Documents\Working-Folder\100-days-python\.data\Default\IndexedDB\https_www.speedtest.net_0.indexeddb.leveldb/MANIFEST-000001
+2025/08/12-11:22:37.535 30f0 Recovering log #6
+2025/08/12-11:22:37.536 30f0 Reusing old log C:\Users\Samuel\Documents\Working-Folder\100-days-python\.data\Default\IndexedDB\https_www.speedtest.net_0.indexeddb.leveldb/000006.log 
+2025/08/12-11:22:37.786 5bf0 Level-0 table #10: started
+2025/08/12-11:22:37.790 5bf0 Level-0 table #10: 11380 bytes OK
+2025/08/12-11:22:37.792 5bf0 Delete type=0 #6
+2025/08/12-11:22:37.793 5bf0 Manual compaction at level-0 from '\x00\x06\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at '\x00\x06\x00\x00\x05' @ 870 : 1
+2025/08/12-11:22:37.793 5bf0 Compacting 1@0 + 1@1 files
+2025/08/12-11:22:37.796 5bf0 Generated table #11@0: 268 keys, 5820 bytes
+2025/08/12-11:22:37.797 5bf0 Compacted 1@0 + 1@1 files => 5820 bytes
+2025/08/12-11:22:37.798 5bf0 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/08/12-11:22:37.799 5bf0 Delete type=2 #10
+2025/08/12-11:22:37.799 30f0 Manual compaction at level-0 from '\x00\x06\x00\x00\x05' @ 870 : 1 .. '\x00\x07\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/08/12-11:22:37.981 5bf0 Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/08/12-11:22:37.989 5bf0 Manual compaction at level-0 from '\x00\x08\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x09\x00\x00\x00' @ 0 : 0; will stop at (end)
