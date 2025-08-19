@@ -17,7 +17,7 @@ class InternetSpeedTwitterBot:
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("disable-infobars")
         chrome_options.add_argument("--lang=en")
-        chrome_options.add_argument(f"--user-data-dir={os.getcwd()}/Day51/.data")
+        chrome_options.add_argument(f"--user-data-dir={os.getcwd()}/Day-53/.data")
         chrome_options.add_experimental_option("detach", True)
         self.driver = webdriver.Chrome(options=chrome_options)
 
